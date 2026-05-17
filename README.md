@@ -74,7 +74,7 @@ CREATE DATABASE campus_entance_exit_monitoring_db;
 ### Step 7 — Edit the connection to point to the new database
 - Right click `OOP Final Project` in the SQLTools sidebar
 - Click **Edit Connection**
-- Change the **Database** field to: `campus_entance_exit_monitoring_db`
+- Change the **Database** field to: `campus_entrance_exit_monitoring_db`
 - Click **Save Connection**
 
 ---
