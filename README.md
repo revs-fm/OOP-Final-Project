@@ -11,20 +11,12 @@
 
 ## Backend Developer Guide — Integrating the SQL File
 
-### Step 1 — Copy the SQL code from GitHub
-- Go to the repository: `https://github.com/revs-fm/OOP-Final-Project`
-- Click on `campus_entrance-exit_monitoring_db.sql`
-- Press `Ctrl + A` to select all the code
-- Press `Ctrl + C` to copy it
-
----
-
-### Step 2 — Install PostgreSQL
+### Step 1 — Install PostgreSQL
 Download and install PostgreSQL from https://www.postgresql.org/download/ if not already installed.
 
 ---
 
-### Step 3 — Add PostgreSQL to your system PATH
+### Step 2 — Add PostgreSQL to your system PATH
 - Press `Windows key + S` and search **Environment Variables**
 - Click **Edit the system environment variables**
 - Click **Environment Variables** at the bottom
@@ -37,14 +29,14 @@ Download and install PostgreSQL from https://www.postgresql.org/download/ if not
 
 ---
 
-### Step 4 — Install SQLTools extension in VS Code
+### Step 3 — Install SQLTools extension in VS Code
 - Press `Ctrl + Shift + X`
 - Search `SQLTools` and install it
 - Search `SQLTools PostgreSQL` and install the driver too
 
 ---
 
-### Step 5 — Add a new connection in SQLTools
+### Step 4 — Add a new connection in SQLTools
 - Click the SQLTools icon on the left sidebar
 - Click **Add New Connection** and select **PostgreSQL**
 - Fill in the fields:
@@ -58,43 +50,52 @@ Download and install PostgreSQL from https://www.postgresql.org/download/ if not
 
 ---
 
-### Step 6 — Create the database
-- Click the SQLTools icon on the left sidebar
-- Click the **New SQL File** button (top of the sidebar)
+### Step 5 — Create the database
+- After saving the connection, a session file called `OOP Final Project.session.sql` will open automatically
+- Clear anything in it (`Ctrl + A` then `Delete`)
 - Type:
 
 ```sql
 CREATE DATABASE campus_entrance_exit_monitoring_db;
 ```
 
-- Press `Ctrl + Enter` to run it
+- Right click anywhere in the file and click **Run on active connection**
 
 ---
 
-### Step 7 — Edit the connection to point to the new database
-- Right click `OOP Final Project` in the SQLTools sidebar
-- Click **Edit Connection**
+### Step 6 — Edit the connection to point to the new database
+- Click the SQLTools icon on the left sidebar
+- Right click `OOP Final Project` and click **Edit Connection**
 - Change the **Database** field to: `campus_entrance_exit_monitoring_db`
 - Click **Save Connection**
 
 ---
 
+### Step 7 — Copy the SQL code from GitHub
+- Go to the repository: `https://github.com/revs-fm/OOP-Final-Project`
+- Click on `campus_entrance-exit_monitoring_db.sql`
+- Press `Ctrl + A` to select all the code
+- Press `Ctrl + C` to copy it
+
+---
+
 ### Step 8 — Paste and run the SQL code
-- Click the **New SQL File** button again in the SQLTools sidebar
-- Press `Ctrl + V` to paste the copied code from GitHub
-- Press `Ctrl + A` to select all
-- Press `Ctrl + Enter` to run it
+- Go back to VS Code and open the session file `OOP Final Project.session.sql`
+- Clear anything in it (`Ctrl + A` then `Delete`)
+- Press `Ctrl + V` to paste the copied code
+- Right click anywhere in the file and click **Run on active connection**
 
 ---
 
 ### Step 9 — Verify the tables and data
-- Clear the file and type:
+- Clear the file again (`Ctrl + A` then `Delete`)
+- Type:
 
 ```sql
 SELECT * FROM students;
 ```
 
-- Press `Ctrl + Enter` to run it
+- Right click and click **Run on active connection**
 
 You should see all 15 students loaded in.
 
