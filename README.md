@@ -59,7 +59,7 @@ Download and install PostgreSQL from https://www.postgresql.org/download/ if not
 CREATE DATABASE campus_entrance_exit_monitoring_db;
 ```
 
-- Right click anywhere in the file and click **Run on active connection**
+- Click on **Run on active connection** located above the query
 
 ---
 
@@ -83,7 +83,7 @@ CREATE DATABASE campus_entrance_exit_monitoring_db;
 - Go back to VS Code and open the session file `OOP Final Project.session.sql`
 - Clear anything in it (`Ctrl + A` then `Delete`)
 - Press `Ctrl + V` to paste the copied code
-- Right click anywhere in the file and click **Run on active connection**
+- Click on **Run on active connection** located above the query
 
 ---
 
@@ -95,7 +95,7 @@ CREATE DATABASE campus_entrance_exit_monitoring_db;
 SELECT * FROM students;
 ```
 
-- Right click and click **Run on active connection**
+- Click on **Run on active connection** located above the query
 
 You should see all 15 students loaded in.
 
