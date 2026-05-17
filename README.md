@@ -4,7 +4,7 @@
 
 ## Database
 - **Database:** PostgreSQL
-- **File:** `campus_entance-exit_monitoring_db.sql`
+- **File:** `campus_entrance-exit_monitoring_db.sql`
 - **Tables:** `students`, `attendance_logs`
 
 ---
@@ -13,7 +13,7 @@
 
 ### Step 1 — Copy the SQL code from GitHub
 - Go to the repository: `https://github.com/revs-fm/OOP-Final-Project`
-- Click on `campus_entance-exit_monitoring_db.sql`
+- Click on `campus_entrance-exit_monitoring_db.sql`
 - Press `Ctrl + A` to select all the code
 - Press `Ctrl + C` to copy it
 
