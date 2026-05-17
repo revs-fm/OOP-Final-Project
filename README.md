@@ -64,7 +64,7 @@ Download and install PostgreSQL from https://www.postgresql.org/download/ if not
 - Type:
 
 ```sql
-CREATE DATABASE campus_entance_exit_monitoring_db;
+CREATE DATABASE campus_entrance_exit_monitoring_db;
 ```
 
 - Press `Ctrl + Enter` to run it
@@ -124,7 +124,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    private static final String URL      = "jdbc:postgresql://localhost:5432/campus_entance_exit_monitoring_db";
+    private static final String URL      = "jdbc:postgresql://localhost:5432/campus_entrance_exit_monitoring_db";
     private static final String USER     = "postgres";
     private static final String PASSWORD = "your_password_here";
 
